@@ -31,5 +31,5 @@ function createGradient() {
     let secondColor = randomColor();
     body.style.background = "linear-gradient(to left, " + firstColor + ", " 
     + secondColor +")";
-    colorRgba.innerHTML = firstColor + " + " + secondColor;
+    colorRgba.innerHTML = "background: linear-gradient(to left, " + firstColor + ", " + secondColor + ");";
 }
