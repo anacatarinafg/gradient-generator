@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Bona+Nova:wght@400;700&display=swap");
+:root {
+  --bg-white-color: #fff;
+  --ff-black-color: #000;
+  --ff-white-color: #fff;
+  --bg-black-color: #000;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  color: var(--ff-black-color);
+  font-family: "Bona Nova", serif;
+  transition: all 0.15s ease-in;
+}
+
+body.darkMode {
+  background-color: var(--bg-black-color);
+  color: var(--ff-white-color);
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-bottom: 1px solid var(--ff-black-color);
+  padding: 2em 0;
+}
+.navbar .navbar__image {
+  width: 30px;
+}
+
+body.darkMode .navbar {
+  border-bottom-color: var(--ff-white-color);
+}
+
+.navbar__button .navbar__toggle {
+  font-size: 30px;
+}
+
+.generator {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.generator__button {
+  width: 500px;
+  height: 500px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.generator__button .generator__span:first-child {
+  font-family: "Bona Nova", serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+body.darkMode .generator__button {
+  background-color: #fff;
+  color: #000;
+}
+
+@media screen and (max-width: 768px) {
+  .generator {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .generator__button {
+    width: 250px;
+    height: 250px;
+  }
+  .generator__button .generator__span:first-child {
+    font-family: "Bona Nova", serif;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+}/*# sourceMappingURL=style.css.map */
