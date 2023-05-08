@@ -66,6 +66,7 @@ button {
 
 .generator__color {
   font-size: 22px;
+  padding: 0 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -89,5 +90,7 @@ button {
   }
   .generator__color {
     font-size: 16px;
+    text-align: center;
+    padding: 0 1.5em;
   }
 }/*# sourceMappingURL=style.css.map */
