@@ -17,9 +17,10 @@ toggleTheme.addEventListener("click", (event) => {
 
 // Create a function that generates random colors values
 function randomColor() {
-    let color = 'rgba(' + (Math.floor(Math.random() * 300)) + ',' 
-    + (Math.floor(Math.random() * 300)) + ',' 
-    + (Math.floor(Math.random() * 300)) + ')';
+    let color = 'rgba(' + (Math.floor(Math.random() * 256)) + ',' 
+    + (Math.floor(Math.random() * 256)) + ',' 
+    + (Math.floor(Math.random() * 256)) + ','
+    + Math.random().toFixed(2) + ')';
     return color;
   }
 
@@ -28,7 +29,7 @@ function randomColor() {
 function createGradient() {
     let firstColor = randomColor();
     let secondColor = randomColor();
-    body.style.background = "linear-gradient(to right, " + firstColor + ", " 
+    body.style.background = "linear-gradient(to left, " + firstColor + ", " 
     + secondColor +")";
     colorRgba.innerHTML = firstColor + " + " + secondColor;
 }

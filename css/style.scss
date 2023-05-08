@@ -3,9 +3,6 @@
 :root {
     --bg-white-color: #fff;
     --ff-black-color: #000;
-
-    --ff-white-color: #fff;
-    --bg-black-color: #000;
 }
 
 *,
@@ -21,11 +18,6 @@ body {
     background-color: #fff;
     color: var(--ff-black-color);
     font-family: 'Bona Nova', serif;
-    transition: all 0.15s ease-in;
-}
-body.darkMode {
-    background-color: var(--bg-black-color);
-    color: var(--ff-white-color);
 }
 button {
     all: unset;
@@ -44,16 +36,6 @@ button {
     }
 }
 
-body.darkMode .navbar {
-    border-bottom-color: var(--ff-white-color);
-}
-.navbar__button {
-
-    .navbar__toggle {
-        font-size: 30px;
-
-    }
-}
 .generator {
     width: 100%;
     height: 80vh;
@@ -63,8 +45,8 @@ body.darkMode .navbar {
     flex-direction: column;
 }
 .generator__button {
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     background-color: #000;
     color: #fff;
     border-radius: 50%;
@@ -79,9 +61,8 @@ body.darkMode .navbar {
         font-weight: 700;
     }
 }
-body.darkMode .generator__button {
-    background-color: #fff;
-    color: #000;
+.generator__color {
+    font-size: 22px;
 }
 
 @media screen and (max-width: 768px) {
@@ -102,5 +83,8 @@ body.darkMode .generator__button {
             font-size: 16px;
             text-transform: uppercase;
         }
+    }
+    .generator__color {
+        font-size: 16px;
     }
 }
